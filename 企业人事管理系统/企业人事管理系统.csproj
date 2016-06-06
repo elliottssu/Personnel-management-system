@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A4DD857-D5BE-4588-B5D4-A554F97B0D9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>企业人事管理系统</RootNamespace>
+    <AssemblyName>企业人事管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/企业人事管理系统/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adduser.Designer.cs">
+      <DependentUpon>Adduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addwage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addwage.Designer.cs">
+      <DependentUpon>Addwage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Changeemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changeemployee.Designer.cs">
+      <DependentUpon>Changeemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Changewage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changewage.Designer.cs">
+      <DependentUpon>Changewage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dept.Designer.cs">
+      <DependentUpon>Dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personinformation.Designer.cs">
+      <DependentUpon>Personinformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personpassword.Designer.cs">
+      <DependentUpon>Personpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personwage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personwage.Designer.cs">
+      <DependentUpon>Personwage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personwork.Designer.cs">
+      <DependentUpon>Personwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usermanage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usermanage.Designer.cs">
+      <DependentUpon>Usermanage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类\Employee.cs" />
+    <Compile Include="类\Job.cs" />
+    <Compile Include="Jobmanage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jobmanage.Designer.cs">
+      <DependentUpon>Jobmanage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jobput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jobput.Designer.cs">
+      <DependentUpon>Jobput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kaoqin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kaoqin.Designer.cs">
+      <DependentUpon>Kaoqin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Land.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Land.Designer.cs">
+      <DependentUpon>Land.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leavefand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leavefand.Designer.cs">
+      <DependentUpon>Leavefand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leaveput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leaveput.Designer.cs">
+      <DependentUpon>Leaveput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renshi.Designer.cs">
+      <DependentUpon>Renshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searchemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searchemployee.Designer.cs">
+      <DependentUpon>Searchemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searchwage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searchwage.Designer.cs">
+      <DependentUpon>Searchwage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类\Seeker.cs" />
+    <Compile Include="类\Sqlhelper.cs" />
+    <Compile Include="类\Wage.cs" />
+    <Compile Include="Addemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addemployee.Designer.cs">
+      <DependentUpon>Addemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workfand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workfand.Designer.cs">
+      <DependentUpon>Workfand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workput.Designer.cs">
+      <DependentUpon>Workput.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adduser.resx">
+      <DependentUpon>Adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addwage.resx">
+      <DependentUpon>Addwage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changeemployee.resx">
+      <DependentUpon>Changeemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changewage.resx">
+      <DependentUpon>Changewage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dept.resx">
+      <DependentUpon>Dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jobmanage.resx">
+      <DependentUpon>Jobmanage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jobput.resx">
+      <DependentUpon>Jobput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kaoqin.resx">
+      <DependentUpon>Kaoqin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Land.resx">
+      <DependentUpon>Land.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leavefand.resx">
+      <DependentUpon>Leavefand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leaveput.resx">
+      <DependentUpon>Leaveput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personinformation.resx">
+      <DependentUpon>Personinformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personpassword.resx">
+      <DependentUpon>Personpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personwage.resx">
+      <DependentUpon>Personwage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personwork.resx">
+      <DependentUpon>Personwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addemployee.resx">
+      <DependentUpon>Addemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renshi.resx">
+      <DependentUpon>Renshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searchemployee.resx">
+      <DependentUpon>Searchemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searchwage.resx">
+      <DependentUpon>Searchwage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usermanage.resx">
+      <DependentUpon>Usermanage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workfand.resx">
+      <DependentUpon>Workfand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workput.resx">
+      <DependentUpon>Workput.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
